@@ -5,15 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+      let buybutton ="Watch added to cart!";
+      console.log(buybutton);
+    </script>
 </head>
 <body>
 <div class="card">
  <div class="divv">
-  <img src="image/Casio1.png.png" 
-  alt="Casio Watch" class="watch-image">
+  <img src="image/casio.red.png" 
+  alt="Casio Watch" class="watch-image" id="casio">
   </div>
  <div class="imged">
-  <img src="image/ed1.png" alt="Edifice Watch" class="ed">\
+  <img src="image/ed3.png" alt="Edifice Watch" class="ed">
   <p class="watch-name"> <span>Casio</span> EOS-920</p>
   <p class="solar">| Solar Powered</p><br>
  </div> <br>
@@ -23,30 +27,30 @@
    <div class="color-options">
     <input type="radio" name="watch" id="casio1"
      value="casio" checked>
-    <label for="casio1" id="black" class="color-cir black"></label>
+    <label for="casio1" id="black" onclick="casio.src='image/casio.red.png'" class="color-cir black"></label>
     <span class="color">Black & Red</span>
    </div>
 
 <div class="color-options">
     <input type="radio" name="watch" id="casio2" value="casio">
-    <label for="casio2" id="silver" class="color-cir silver"></label>
+    <label for="casio2" id="silver" onclick="casio.src='image/casio.blue.png'" class="color-cir silver"></label>
     <span class="color">Silver & Blue</span>
     </div>
 
   <div class="color-options">
     <input type="radio" name="watch" id="casio3"
      value="casio">
-    <label for="casio3" id="gunm" class="color-cir Gunmetal"></label>
+    <label for="casio3" id="gunm" onclick="casio.src='image/casio.gray.png'" class="color-cir Gunmetal"></label>
     <span class="color">Gunmetal Grey</span>
     </div>
 
     <div class="color-options">
     <input type="radio" name="watch" id="casio4" value="casio">
-    <label for="casio4" id="olive" class="color-cir Olive"></label>
-    <span class="color">Black & Olive</span>
+    <label for="casio4" id="olive" onclick="casio.src='image/casio.silred.png'" class="color-cir Olive"></label>
+    <span class="color">Silver & Red</span>
     </div>
  </div>
  </form> <br> <br>
  <p class="watch-price"> <del>$79.99</del> $59.99</p>
- <p class="watch">Buy <span>Now</span></p>
+ <button class="watch" onclick="alert(buybutton)">Buy <span>Now</span></button>
   </div>
